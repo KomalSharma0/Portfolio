@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komal Sharma - Data Analytics Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1E1E1E;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        header nav a {
+            color: #E0E0E0;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #03DAC6;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+        }
+        .skills, .experience, .projects, .contact {
+            margin-top: 4rem;
+        }
+        .skills ul, .experience ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills ul li, .experience ul li {
+            background: #1E1E1E;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .projects .project {
+            margin: 1rem 0;
+            background: #1E1E1E;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .projects .project img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .contact a {
+            color: #03DAC6;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin: 0.5rem 0;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .download-cv {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .download-cv a {
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            background-color: #03DAC6;
+            color: #121212;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .download-cv a:hover {
+            background-color: #018786;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Komal Sharma</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about" class="about">
+            <img src="profile.jpg" alt="Komal Sharma's Photo">
+            <div>
+                <h2>About Me</h2>
+                <p>Hello! I'm Komal Sharma, a data analyst with expertise in Excel, Python, SQL, and Power BI. I am passionate about solving real-world problems using data-driven insights.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+                <li>SQL</li>
+                <li>Power BI</li>
+                <li>Excel (Advanced Functions, Dashboards)</li>
+                <li>Data Cleaning and Visualization</li>
+            </ul>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>Data Analyst Intern at KultureHire</li>
+                <li>Data Analytics Intern at 360DigitMG</li>
+                <li>Data Analysis Intern at Cognifyz Technologies</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <p>Gen Z Career Aspirations Dashboard</p>
+                <img src="project1-thumbnail.jpg" alt="Project 1 Thumbnail">
+            </div>
+            <div class="project">
+                <p>Employee Presence Analysis</p>
+                <img src="project2-thumbnail.jpg" alt="Project 2 Thumbnail">
+            </div>
+            <div class="project">
+                <p>Machine Downtime Optimization</p>
+                <img src="project3-thumbnail.jpg" alt="Project 3 Thumbnail">
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <a href="https://www.linkedin.com/in/komal-sharma-189823263/">LinkedIn</a>
+            <a href="mailto:sharmakomal3017@gmail.com">Email</a>
+        </section>
+
+        <div class="download-cv">
+            <a href="resume.pdf" download>Download CV</a>
+        </div>
+    </main>
+</body>
+</html>
