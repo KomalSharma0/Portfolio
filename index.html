@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header dark-background d-flex flex-column">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+
+      <div class="profile-img">
+        <img src="assets/img/my profile.jpg" alt="" class="img-fluid rounded-circle">
+      </div>
+
+      <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Komal Sharma</h1>
+      </a>
+
+      <div class="social-links text-center">
+        <a href="mailto:sharmakomal3017@gmail.com"><i class="bi bi-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/komalsharma-insights/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/KomalSharma0" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main class="main">
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero section">
+    <div class="hero-overlay"></div> <!-- Faded overlay -->
+    <div class="hero-bg-image"></div> <!-- Low-opacity background image -->
+
+    <div class="hero-content">
+      <!-- Circular profile picture with play button -->
+      <div class="video-frame" onclick="openVideo()">
+        <img src="assets/img/circlebg.jpg" alt="Komal Sharma">
+        <div class="play-button">&#9658;</div>
+      </div>
+
+      <!-- Name and Tagline -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Komal Sharma</h2>
+        <p><span class="typed" data-typed-items="Data Enthusiast | Transforming Data into Insights"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+  </section>
+
+  <!-- Video Popup -->
+  <div id="video-popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closeVideo()">&times;</span>
+      <iframe id="youtube-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function openVideo() {
+      document.getElementById("video-popup").style.display = "flex";
+      document.getElementById("youtube-video").src = "https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1";
+    }
+
+    function closeVideo() {
+      document.getElementById("video-popup").style.display = "none";
+      document.getElementById("youtube-video").src = "";
+    }
+  </script>
+  
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>About</h2>
+      <p>I am a passionate data analytics professional with a keen interest in leveraging data to solve real-world problems. Over the course of my internships and projects, I’ve honed my skills in SQL, Python, Power BI, and Excel, and I continue to explore new tools and techniques to further enhance my capabilities.</p>
+    </div><!-- End Section Title -->
+
+  </section><!-- /About Section -->
+
+
+  <!-- Stats Section -->
+  <section id="stats" class="stats section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4 text-center"> <!-- Center everything -->
+        
+        <!-- Excel Projects -->
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item">
+            <div class="stats-content">
+              <img src="assets/img/excel.png" alt="Excel Logo" class="stats-logo">
+              <span class="purecounter" data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"></span>
+            </div>
+            <p><strong>Excel Projects</strong></p>
+          </div>
+        </div>
+
+        <!-- Power BI Projects -->
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item">
+            <div class="stats-content">
+              <img src="assets/img/powerbi.png" alt="Power BI Logo" class="stats-logo">
+              <span class="purecounter" data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"></span>
+            </div>
+            <p><strong>Power BI Projects</strong></p>
+          </div>
+        </div>
+
+        <!-- SQL Projects -->
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item">
+            <div class="stats-content">
+              <img src="assets/img/sql.png" alt="SQL Logo" class="stats-logo">
+              <span class="purecounter" data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"></span>
+            </div>
+            <p><strong>SQL Projects</strong></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">MS Excel (Advanced)</div>
+        <div class="skill-card">Power BI</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">Python (Basics)</div>
+        <div class="skill-card">Dashboarding</div>
+        <div class="skill-card">Data Visualization</div>
+        <div class="skill-card">Problem-Solving</div>
+        <div class="skill-card">Attention to Detail</div>
+        <div class="skill-card">Presentation Skills</div>
+        <div class="skill-card">Communication</div>
+    </div>
+  </section><!-- /Skills Section -->    
+  
+  
+  
+  <section id="career-timeline" class="career timeline-section">
+    <h2 class="section-title">Career Timeline</h2> <!-- Centered title -->
+    
+    <div class="timeline-container">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <h3>Power BI Intern - Cognifyz Tech</h3>
+                <p><strong>Jan 2025 - Present</strong></p>
+                <p>Working on investment data analysis and dashboarding.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <h3>Intern - KultureHire</h3>
+                <p><strong>Oct 2024 - Jan 2025</strong></p>
+                <p>Analyzed Gen Z career aspirations.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <h3>Career Break</h3>
+                <p><strong>2021 - 2024</strong></p>
+                <p>Focused on learning and skill development.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <h3>Bachelor of Science (P.M.Cs)</h3>
+                <p><strong>2017 - 2020</strong></p>
+                <p>Graduated with Physics, Mathematics, and Computer Science.</p>
+            </div>
+        </div>
+    </div>
+</section><!-- /Experience Section -->    
+
+    
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section light-background">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Portfolio</h2>
+      <p>Explore my projects categorized by the tools and technologies I used.</p>
+    </div>
+      
+    <div class="container">
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-excel">Excel</li>
+          <li data-filter=".filter-powerbi">Power BI</li>
+          <li data-filter=".filter-sql">SQL</li>
+          <!--<li data-filter=".filter-multi">Multi-Tool Projects</li>-->
+        </ul>
+      
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <!-- Excel Project 1-->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-powerbi">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/project1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Investment Analysis Dashboard</h4>
+                <p>Power BI dashboard analyzing investment preferences.</p>
+                <a href="https://github.com/yourrepo" target="_blank" class="details-link"><i class="bi bi-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/presentation" target="_blank" class="details-link"><i class="bi bi-linkedin"></i> Presentation</a>
+                <a href="executive_summary.pdf" target="_blank" class="details-link"><i class="bi bi-file-earmark-text"></i> Summary</a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- Excel Project 2 -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-powerbi">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/project1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                <h4>Investment Analysis Dashboard</h4>
+                <p>Power BI dashboard analyzing investment preferences.</p>
+                <a href="https://github.com/yourrepo" target="_blank" class="details-link"><i class="bi bi-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/presentation" target="_blank" class="details-link"><i class="bi bi-linkedin"></i> Presentation</a>
+                <a href="executive_summary.pdf" target="_blank" class="details-link"><i class="bi bi-file-earmark-text"></i> Summary</a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- PowerBI Project 1 -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-powerbi">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/project1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Investment Analysis Dashboard</h4>
+                <p>Power BI dashboard analyzing investment preferences.</p>
+                <a href="https://github.com/yourrepo" target="_blank" class="details-link"><i class="bi bi-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/presentation" target="_blank" class="details-link"><i class="bi bi-linkedin"></i> Presentation</a>
+                <a href="executive_summary.pdf" target="_blank" class="details-link"><i class="bi bi-file-earmark-text"></i> Summary</a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- PowerBI Project 2 -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-powerbi">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/project1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Investment Analysis Dashboard</h4>
+                <p>Power BI dashboard analyzing investment preferences.</p>
+                <a href="https://github.com/yourrepo" target="_blank" class="details-link"><i class="bi bi-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/presentation" target="_blank" class="details-link"><i class="bi bi-linkedin"></i> Presentation</a>
+                <a href="executive_summary.pdf" target="_blank" class="details-link"><i class="bi bi-file-earmark-text"></i> Summary</a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- Sql Project 1-->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-powerbi">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/project1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Investment Analysis Dashboard</h4>
+                <p>Power BI dashboard analyzing investment preferences.</p>
+                <a href="https://github.com/yourrepo" target="_blank" class="details-link"><i class="bi bi-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/presentation" target="_blank" class="details-link"><i class="bi bi-linkedin"></i> Presentation</a>
+                <a href="executive_summary.pdf" target="_blank" class="details-link"><i class="bi bi-file-earmark-text"></i> Summary</a>
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- SQL Project 2-->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-powerbi">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/project1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Investment Analysis Dashboard</h4>
+                <p>Power BI dashboard analyzing investment preferences.</p>
+                <a href="https://github.com/yourrepo" target="_blank" class="details-link"><i class="bi bi-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/presentation" target="_blank" class="details-link"><i class="bi bi-linkedin"></i> Presentation</a>
+                <a href="executive_summary.pdf" target="_blank" class="details-link"><i class="bi bi-file-earmark-text"></i> Summary</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more projects following this structure -->
+        </div>
+      </div>
+    </div>
+  </section><!-- /Portfolio Section -->
+
+
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications-section">
+    <h2 class="section-title">Certificates</h2>
+    <div class="slider-container">
+        <button class="prev-btn">←</button>
+        <div class="certification-slider">
+            <!-- Certificate 1 -->
+            <div class="certificate-item" data-category="Data Analytics">
+                <img src="assets/img/dax.png" alt="Certificate 1">
+                <h6>Power BI Data Modeling with DAX</h6>
+                <p>Category: Data Analytics</p>
+                <a href="https://www.linkedin.com/learning/certificates/56342cc9932672546e4ec1fcb9ef9ae217d0e38d4cf164a39ff30dd158ffb749" target="_blank">View Certificate</a>
+            </div>
+        
+            <!-- Certificate 2 -->
+            <div class="certificate-item" data-category="Data Analytics">
+                <img src="assets/img/dataanalytics.png" alt="Certificate 2">
+                <h6>Data Analytics (MS Excel, SQL, Power BI, & Python Core*)</h6>
+                <p>Category: Data Analytics</p>
+                <a href="https://app.certif-id.com/certificate-view/3f37914ebea2f7f7ff2e2640c692b2fa34be270bc26d8f482fee250f79c7b539" target="_blank">View Certificate</a>
+            </div>
+        
+            <!-- Certificate 3 -->
+            <div class="certificate-item" data-category="Data Analytics">
+                <img src="assets/img/sqlcourse.png" alt="Certificate 3">
+                <h6>The Complete SQL Bootcamp</h6>
+                <p>Category: Data Analytics</p>
+                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-620c9497-1418-43fe-9e42-e6f9b1a77a96.pdf" target="_blank">View Certificate</a>
+            </div>
+
+            <!-- Certificate 4 -->
+            <div class="certificate-item" data-category="Data Analytics">
+                <img src="assets/img/advancedexcel.png" alt="Certificate 3">
+                <h6>Advanced Excel</h6>
+                <p>Category: Data Analytics</p>
+                <a href="https://trainings.internshala.com/s/v/2809639/57c24bee" target="_blank">View Certificate</a>
+            </div>
+
+            <!-- Certificate 5 -->
+            <div class="certificate-item" data-category="Job Simulation">
+                <img src="assets/img/tata.png" alt="Certificate 3">
+                <h6>Data Visualisation Job Simulation</h6>
+                <p>Category: Job Simulation</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Tata/MyXvBcppsW2FkNYCX_Tata%20Group_cAqzqhKRtzdMB7ckL_1727438784646_completion_certificate.pdf" target="_blank">View Certificate</a>
+            </div>
+
+            <!-- Certificate 6-->
+            <div class="certificate-item" data-category="Job Simulation">
+                <img src="assets/img/pwc.png" alt="Certificate 3">
+                <h6>Power BI Job Simulation</h6>
+                <p>Category: Job Simulation</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/PwC%20Switzerland/a87GpgE6tiku7q3gu_PwC%20Switzerland_cAqzqhKRtzdMB7ckL_1722255371850_completion_certificate.pdf" target="_blank">View Certificate</a>
+            </div>
+
+            <!-- Certificate 7 -->
+            <div class="certificate-item" data-category="Other">
+                <img src="assets/img/genai.png" alt="Certificate 3">
+                <h6>Career Essentials in Generative AI</h6>
+                <p>Category: Other</p>
+                <a href="https://www.linkedin.com/learning/certificates/14ae901a557c07e6e15781775ccb755ed1a22b0c78e5f59d89398f9f89eb144b" target="_blank">View Certificate</a>
+            </div>
+            <!-- More Certificates -->
+        </div>
+        <button class="next-btn">→</button>
+    </div>
+  </section><!-- /Certifications Section -->
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-box">
+        <h2>Let’s Connect</h2>
+        <p>Great ideas come to life through meaningful connections. Let's collaborate and create something impactful together!</p>
+        <div class="contact-links">
+            <a href="mailto:sharmakomal3017@gmail.com"><i class="bi bi-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/komalsharma-insights/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/KomalSharma0" target="_blank"><i class="bi bi-github"></i></a>  
+        </div>
+    </div>
+  </section><!-- /Contact Section -->
+
+
+      
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© 2025 Komal Sharma</p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <p>Template by <a href="https://bootstrapmade.com/">BootstrapMade</a>. Customized by <a href="https://github.com/KomalSharma0">Komal Sharma</a></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
