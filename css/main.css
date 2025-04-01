@@ -1023,11 +1023,44 @@ section,
 }
 
 /* For smaller screens */
-@media (max-width: 1200px) {
-  .certificate-item {
-    flex: 0 0 80%; /* Show one at a time */
-    min-width: 200px;
+@media (max-width: 768px) {
+  .certification-slider {
+    width: 100%; /* Ensure it fits within the section */
   }
+
+  .certificate-item {
+    flex: 0 0 90%; /* Show 1 item fully, slightly reduce size */
+    min-width: 150px; /* Adjust minimum width */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .certificate-item img {
+    max-width: 100%; /* Make sure images scale down */
+    height: auto;
+  }
+
+  .certifications-section {
+    padding: 30px 10px; /* Reduce padding for better spacing */
+  }
+
+  .section-title {
+    font-size: 22px; /* Reduce title size */
+  }
+
+  .certificate-item p {
+    font-size: 14px; /* Reduce text size */
+  }
+
+  .slider-container {
+    justify-content: center; /* Centers the slider */
+  }
+
+  @media (max-width: 480px) {
+    .certificate-item p {
+      font-size: 12px;
+    }
+  }
+  
 }
 
 
