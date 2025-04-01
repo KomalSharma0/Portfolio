@@ -967,6 +967,8 @@ section,
   text-align: center;
   padding: 50px 20px;
   background-color: #F8FAFC; /* Soft grayish blue */
+  max-width: 1200px; /* Limits width */
+  margin: 0 auto; /* Centers it */
 }
 
 /* Title Styling */
@@ -985,21 +987,25 @@ section,
 
 .certification-slider {
   display: flex;
-  gap: 10px;
-  overflow-x: scroll;
+  justify-content: center; /* Centers the certificates */
+  gap: 20px; /* Increase spacing for a balanced look */
+  overflow-x: auto;
   scroll-behavior: smooth;
   white-space: nowrap;
-  width: 80%; /* Adjust as needed */
+  width: 90%; /* Increase width for better centering */
+  margin: 0 auto; /* Centers the slider itself */
 }
 
 .certificate-item {
-  flex: 0 0 calc(50% - 20px); /* Shows 4 items at a time */
+  flex: 0 0 45%; /* Two certificates per row */
+  min-width: 300px; /* Increase minimum width */
+  max-width: 400px; /* Limit max width for balance */
+  text-align: center;
   background: #f3f3f3;
   padding: 20px;
-  text-align: center;
   border-radius: 8px;
-  min-width: 200px; /* Adjust this as per your design */
 }
+
 
 .prev-btn, .next-btn {
   background-color: #333;
@@ -1015,75 +1021,19 @@ section,
   background-color: #555;
 }
 
-
-
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
-/*.portfolio-details .portfolio-details-slider img {
-  width: 100%;
+/* For smaller screens */
+@media (max-width: 768px) {
+  .certificate-item {
+    flex: 0 0 80%; /* Show one at a time */
+    min-width: 280px;
+  }
 }
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-} */
 
 
 
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-/* Contact Section */
 .contact {
   display: flex;
   align-items: center;
@@ -1091,7 +1041,7 @@ section,
   text-align: center;
   min-height: 50vh;
   background-color: black;
-  padding: 80px 20px;
+  padding: 20px;
 }
 
 /* Contact Box */
@@ -1103,6 +1053,7 @@ section,
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
   width: 60%;
+  max-width: 600px;
 }
 
 /* Contact Heading */
@@ -1115,7 +1066,7 @@ section,
 
 /* Contact Text */
 .contact-box p {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   font-weight: 400;
   margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.8);
@@ -1142,4 +1093,12 @@ section,
   background-color: white;
   color: black;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .contact-box {
+      width: 90%; /* Makes it more centered and responsive */
+      padding: 20px; /* Adjust padding for better spacing */
+  }
 }
