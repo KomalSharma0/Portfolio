@@ -1022,7 +1022,7 @@ section,
 }
 
 /* For smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .certificate-item {
     flex: 0 0 80%; /* Show one at a time */
     min-width: 280px;
