@@ -1006,14 +1006,6 @@ certificate-item {
   text-align: center;
 }
 
-.certificate-item h6 {
-  font-size: 16px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 90%; /* Prevents wrapping */
-}
-
 .prev-btn, .next-btn {
   background-color: #333;
   color: white;
