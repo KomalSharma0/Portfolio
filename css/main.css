@@ -657,8 +657,8 @@ section,
 /* Responsive Adjustments */
 @media (max-width: 1200px) {
   .video-frame {
-    width: 380px;
-    height: 380px;
+    width: 300px;
+    height: 300px;
   }
   
   .hero h2 {
@@ -670,7 +670,7 @@ section,
   }
 
   .popup iframe {
-    height: 480px;
+    height: 200px;
   }
 }
 
