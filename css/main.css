@@ -657,8 +657,8 @@ section,
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .video-frame {
-    width: 300px;
-    height: 300px;
+    width: 120px;
+    height: 120px;
   }
   
   .hero h2 {
@@ -670,7 +670,7 @@ section,
   }
 
   .popup iframe {
-    height: 200px;
+    height: 280px;
   }
 }
 
@@ -960,6 +960,8 @@ section,
   margin: 0
 }
 
+
+
 /*--------------------------------------------------------------
 # Certifications Section
 --------------------------------------------------------------*/
@@ -1006,7 +1008,6 @@ section,
   border-radius: 8px;
 }
 
-
 .prev-btn, .next-btn {
   background-color: #333;
   color: white;
@@ -1024,7 +1025,7 @@ section,
 /* For smaller screens */
 @media (max-width: 600px) {
   .certificate-item {
-    flex: 0 0 80%; /* Show one at a time */
+    flex: 0 0 60%; /* Show one at a time */
     min-width: 280px;
   }
 }
