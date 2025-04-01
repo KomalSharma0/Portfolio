@@ -1044,21 +1044,15 @@ section,
   }
 
   .section-title {
-    font-size: 22px; /* Reduce title size */
+    font-size: 28px; /* Reduce title size */
   }
 
   .certificate-item p {
-    font-size: 14px; /* Reduce text size */
+    font-size: 12px; /* Reduce text size */
   }
 
   .slider-container {
     justify-content: center; /* Centers the slider */
-  }
-
-  @media (max-width: 480px) {
-    .certificate-item p {
-      font-size: 12px;
-    }
   }
   
 }
