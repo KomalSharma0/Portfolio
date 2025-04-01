@@ -226,13 +226,13 @@
    window.addEventListener('load', navmenuScrollspy);
    document.addEventListener('scroll', navmenuScrollspy);
 
-   let currentIndex = 0;
- const totalCertificates = document.querySelectorAll(".certificate").length;
- const visibleCertificates = 3;
- const sliderContainer = document.querySelector(".slider-container");
-
-
+  
     // Certifications Section
+   let currentIndex = 0;
+   const totalCertificates = document.querySelectorAll(".certificate").length;
+   const visibleCertificates = 2;
+   const sliderContainer = document.querySelector(".slider-container");
+
     document.addEventListener("DOMContentLoaded", function () {
       const slider = document.querySelector(".certification-slider");
       const prevBtn = document.querySelector(".prev-btn");
@@ -241,7 +241,7 @@
       if (!slider || !prevBtn || !nextBtn) return;
       
       const itemWidth = slider.children[0].offsetWidth + 20; // Include margin
-      const visibleItems = 1;
+      const visibleItems = 2;
       const scrollAmount = itemWidth * visibleItems;
       let autoSlideInterval;
       
@@ -263,18 +263,18 @@
       prevBtn.addEventListener("click", function () {
           stopAutoSlide();
           slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-          setTimeout(startAutoSlide, 3000); // Resume after 3 sec
+          setTimeout(startAutoSlide, 5000); // Resume after 5 sec
       });
       
       nextBtn.addEventListener("click", function () {
           stopAutoSlide();
           slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
-          setTimeout(startAutoSlide, 3000);
+          setTimeout(startAutoSlide, 5000);
       });
       
       slider.addEventListener("scroll", function () {
           stopAutoSlide();
-          setTimeout(startAutoSlide, 3000);
+          setTimeout(startAutoSlide, 5000);
       });
       
       window.addEventListener("resize", startAutoSlide);
