@@ -241,7 +241,7 @@
       if (!slider || !prevBtn || !nextBtn) return;
       
       const itemWidth = slider.children[0].offsetWidth + 20; // Include margin
-      const visibleItems = 2;
+      const visibleItems = 1;
       const scrollAmount = itemWidth * visibleItems;
       let autoSlideInterval;
       
@@ -253,7 +253,7 @@
               } else {
                   slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
               }
-          }, 1000); // Auto-slide every 3 seconds
+          }, 1000); // Auto-slide every 1 seconds
       }
       
       function stopAutoSlide() {
@@ -263,18 +263,18 @@
       prevBtn.addEventListener("click", function () {
           stopAutoSlide();
           slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-          setTimeout(startAutoSlide, 5000); // Resume after 3 sec
+          setTimeout(startAutoSlide, 3000); // Resume after 3 sec
       });
       
       nextBtn.addEventListener("click", function () {
           stopAutoSlide();
           slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
-          setTimeout(startAutoSlide, 5000);
+          setTimeout(startAutoSlide, 3000);
       });
       
       slider.addEventListener("scroll", function () {
           stopAutoSlide();
-          setTimeout(startAutoSlide, 5000);
+          setTimeout(startAutoSlide, 3000);
       });
       
       window.addEventListener("resize", startAutoSlide);
