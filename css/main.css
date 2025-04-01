@@ -998,14 +998,20 @@ section,
   margin: 0 auto; /* Centers the slider itself */
 }
 
-.certificate-item {
-  flex: 0 0 45%; /* Two certificates per row */
-  min-width: 300px; /* Increase minimum width */
-  max-width: 400px; /* Limit max width for balance */
+certificate-item {
+  flex: 0 0 calc(50% - 20px); /* Ensures exactly 2 certificates per row */
+  max-width: calc(50% - 20px); /* Prevents overflow */
+  min-width: 250px; /* Ensures certificates don’t shrink too much */
+  padding: 15px; /* Adjust spacing */
   text-align: center;
-  background: #f3f3f3;
-  padding: 20px;
-  border-radius: 8px;
+}
+
+.certificate-item h6 {
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%; /* Prevents wrapping */
 }
 
 .prev-btn, .next-btn {
@@ -1030,7 +1036,8 @@ section,
 
   .certificate-item {
     flex: 0 0 90%; /* Show 1 item fully, slightly reduce size */
-    min-width: 150px; /* Adjust minimum width */
+    max-width: 90%;
+    min-width: auto; /* Adjust minimum width */
     padding: 10px; /* Reduce padding */
   }
 
@@ -1045,10 +1052,6 @@ section,
 
   .section-title {
     font-size: 28px; /* Reduce title size */
-  }
-
-  .certificate-item p {
-    font-size: 12px; /* Reduce text size */
   }
 
   .slider-container {
@@ -1128,5 +1131,21 @@ section,
   .contact-box {
       width: 100%; /* Makes it more centered and responsive */
       padding: 20px; /* Adjust padding for better spacing */
+  }
+
+/* Contact Heading */
+  .contact-box h2 {
+      font-size: 2.0rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: white;
+  }
+
+/* Contact Text */
+  .contact-box p {
+      font-size: 1.0rem;
+      font-weight: 400;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.8);
   }
 }
