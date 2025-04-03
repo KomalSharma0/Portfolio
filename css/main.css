@@ -539,10 +539,12 @@ section,
   margin-bottom: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-/* Hero Section */
+/* General Section styling */
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -654,7 +656,7 @@ section,
   cursor: pointer;
 }
 
-/* Responsive Adjustments */
+/* Responsive Styling */
 @media (max-width: 1200px) {
   .video-frame {
     width: 300px;
@@ -680,65 +682,24 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-#about .section-title {
-  text-align: left;
+/* General Section Styling */
+.about .section-title {
+  text-align: Left;
+  font-size: 1.8rem;
 }
 
-.about .content h2 {
-  font-weight: 700;
-  font-size: 24px;
+/* Summary Section */
+.about p {
+  font-size: 1.5rem;
+  line-height: 1.6;
 }
 
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
 
-.about .content ul li {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.about .content ul strong {
-  margin-right: 10px;
-}
-
-.about .content ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: var(--accent-color);
-  line-height: 0;
-}
-
-/*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
-.stats-content {
-  display: flex;
-  flex-direction: column; /* Align items vertically */
-  align-items: center; /* Center-align everything */
-  justify-content: center;
-  gap: 8px; /* Add space between the logo and number */
-}
-
-.stats-logo {
-  width: 100px;  /* Set a uniform size */
-  height: 100px;
-  object-fit: contain; /* Prevent stretching */
-}
-
-.purecounter {
-  font-size: 30px; /* Make numbers readable */
-  font-weight: bold;
-  color: #333;
-}
-
-.stats-item {
-  padding: 10px;
-  background: #f8f9fa; /* Light background */
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .about p {
+      font-size: 0.9rem;
+  }
 }
 
 
@@ -755,7 +716,7 @@ section,
 
 /* Title Styling */
 .section-title {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
   color: #1E293B; /* Dark blue-gray */
   margin-bottom: 20px;
@@ -788,87 +749,155 @@ section,
 }
 
 
+
+/* Responsive Styling */
+@media (max-width: 768px) {  
+  .skills-section {
+    padding: 30px 15px; /* Reduce padding for smaller screens */
+  }
+
+  .section-title {
+    font-size: 22px; /* Slightly smaller title */
+  }
+
+  .skills-container {
+    gap: 6px; /* Reduce gap for better fit */
+  }
+
+  .skill-card {
+    font-size: 12px; /* Adjust text size */
+    padding: 10px 16px; /* Slightly smaller padding */
+    border-radius: 8px; /* Reduce rounded edges slightly */
+  }
+}
+
+@media (max-width: 480px) {  
+  .skill-card {
+    font-size: 11px; 
+    padding: 8px 14px; /* More compact for very small screens */
+  }
+}
+
+
+
 /*--------------------------------------------------------------
 # Experience Section
 --------------------------------------------------------------*/
-/* Center the Title */
-.section-title {
+/* General Section Styling */
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-size: 28px;
+  width: 100%;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline-title {
+  text-align: center;  /* Ensure it is always centered */
+  font-size: 28px; /* Adjust size as needed */
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 /* Timeline Container */
 .timeline-container {
-  width: 80%;
-  margin: auto;
-  padding: 20px 0;
   position: relative;
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-/* Vertical Timeline Line */
+/* Left-Aligned Vertical Timeline Line */
 .timeline-container::before {
   content: "";
   position: absolute;
-  left: 20px;
   top: 0;
-  width: 3px;
+  left: 20px;  /* Moves the line to the left */
+  width: 4px;
   height: 100%;
-  background-color: #0A1931;
+  background: #202933;
 }
 
 /* Timeline Item */
 .timeline-item {
   position: relative;
   margin-bottom: 40px;
-  padding-left: 50px;
+  padding-left: 50px;  /* Space for the vertical line and dots */
+  text-align: left;  /* Ensure text is left-aligned */
 }
 
-/* Dots Correctly Aligned */
+/* Timeline Dots */
 .timeline-dot {
   position: absolute;
-  left: 14px;
+  left: 15px; /* Align with the timeline */
   top: 10px;
-  width: 14px;
-  height: 14px;
-  background-color: #0A1931;
+  width: 15px;
+  height: 15px;
+  background: #202933;
   border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: 4px solid #202933;
 }
 
 /* Timeline Card */
 .timeline-card {
-  background-color: #F5F5F5;
+  width: 100%;
+  background: #F8FAFC;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-  transition: transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: left;  /* Ensure text inside is left-aligned */
 }
 
-.timeline-card:hover {
-  transform: translateY(-5px);
-}
-
-.timeline-card h3 {
-  margin: 0;
-  font-size: 18px;
-  color: #0A1931;
+/* Style for the date */
+.timeline-date {
+  font-size: 15px; /* Keep it readable */
   font-weight: bold;
+  color: #202933; /* Adjust color if needed */
 }
 
-.timeline-card p {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #333;
+/* Style for the description */
+.timeline-description {
+  font-size: 14px;  /* Make description text smaller */
+  line-height: 1.5;
+  color: #333;  /* Ensures readability */
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .timeline-container {
+    width: 90%;
+  }
+
+  .timeline-item {
+    padding-left: 40px; /* Keep space for timeline dots */
+  }
+
+  .timeline-container::before {
+    left: 10px; /* Adjust the line to the left */
+  }
+
+  .timeline-dot {
+    left: 5px; /* Align dots properly */
+  }
+
+  .timeline-card {
+    width: 100%;
+    text-align: left;  /* Keep text alignment consistent */
+  }
 }
 
 
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# Project Section
 --------------------------------------------------------------*/
 .portfolio {
   padding: 60px 0;
@@ -878,6 +907,12 @@ section,
 .portfolio .section-title {
   text-align: left;
   margin-bottom: 40px;
+}
+
+/* Summary Section */
+.about p {
+  font-size: 1.5rem;
+  line-height: 1.6;
 }
 
 .portfolio-filters {
@@ -961,95 +996,200 @@ section,
 }
 
 
+/* Responsive Styling */
+@media (max-width: 1024px) {
+  .portfolio {
+    padding: 30px 0;
+  }
+
+  .portfolio .section-title {
+    text-align: center;
+    font-size: 22px; /* Adjust title size */
+    margin-bottom: 30px;
+  }
+
+  .portfolio-filters li {
+    font-size: 12px; /* Reduce button font size */
+    padding: 6px 12px;
+  }
+
+  .portfolio-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items */
+  }
+
+  .portfolio-content {
+    width: 100%; /* Full width */
+    margin-bottom: 15px;
+  }
+
+  .portfolio-info h4 {
+    font-size: 16px;
+  }
+
+  .portfolio-info p {
+    font-size: 12px;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Certifications Section
 --------------------------------------------------------------*/
-.certifications-section {
+/* General Section Styling */
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 50px 20px;
-  background-color: #F8FAFC; /* Soft grayish blue */
-  max-width: 1200px; /* Limits width */
-  margin: 0 auto; /* Centers it */
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Title Styling */
 .section-title {
   font-size: 28px;
   font-weight: bold;
   color: #1E293B; /* Dark blue-gray */
   margin-bottom: 20px;
-}
-
-.slider-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.certification-slider {
-  display: flex;
-  justify-content: center; /* Centers the certificates */
-  gap: 20px; /* Increase spacing for a balanced look */
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  white-space: nowrap;
-  width: 90%; /* Increase width for better centering */
-  margin: 0 auto; /* Centers the slider itself */
-}
-
-certificate-item {
-  flex: 0 0 calc(50% - 20px); /* Ensures exactly 2 certificates per row */
-  max-width: calc(50% - 20px); /* Prevents overflow */
-  min-width: 250px; /* Ensures certificates don’t shrink too much */
-  padding: 15px; /* Adjust spacing */
   text-align: center;
+  width: 100%;
 }
 
-.prev-btn, .next-btn {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 20px;
-  border-radius: 5px;
+/* Grid Styling */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive Grid */
+  gap: 20px; /* Space between grid items */
+  width: 100%; /* Ensure it doesn't stretch beyond its container */
+  max-width: 1000px; /* Prevent it from becoming too wide */
+  margin: 0 auto; /* Center the grid */
 }
 
-.prev-btn:hover, .next-btn:hover {
-  background-color: #555;
+/* Certificate item */
+.certificate-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* For smaller screens */
+/* Certificate image */
+.certificate-img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+/* Certificate title */
+.certificate-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Certificate link */
+.certificate-link {
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.certificate-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive styling */
 @media (max-width: 768px) {
-  .certification-slider {
-    width: 100%; /* Ensure it fits within the section */
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
   }
-
-  .certificate-item {
-    flex: 0 0 90%; /* Show 1 item fully, slightly reduce size */
-    max-width: 90%;
-    min-width: auto; /* Adjust minimum width */
-    padding: 10px; /* Reduce padding */
+  
+  .section-title {
+    font-size: 5vw; /* Responsive text */
   }
+}
 
-  .certificate-item img {
-    max-width: 100%; /* Make sure images scale down */
-    height: auto;
-  }
 
-  .certifications-section {
-    padding: 30px 10px; /* Reduce padding for better spacing */
+@media (max-width: 480px) {
+  .certifications-grid {
+    grid-template-columns: 1fr; /* 1 item per row */
   }
 
   .section-title {
-    font-size: 28px; /* Reduce title size */
+    font-size: 6vw; /* Slightly larger on small screens */
   }
+}
 
-  .slider-container {
-    justify-content: center; /* Centers the slider */
-  }
-  
+
+
+
+/*--------------------------------------------------------------
+# Project Details Section
+--------------------------------------------------------------*/
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  opacity: 1;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
 
@@ -1057,6 +1197,7 @@ certificate-item {
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+/* General Section Styling */
 .contact {
   display: flex;
   align-items: center;
@@ -1118,26 +1259,26 @@ certificate-item {
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
 }
 
-/* For smaller screens */
+/* Responsive Styling */
 @media (max-width: 768px) {
   .contact-box {
       width: 100%; /* Makes it more centered and responsive */
       padding: 20px; /* Adjust padding for better spacing */
   }
 
-/* Contact Heading */
+  /* Contact Heading */
   .contact-box h2 {
-      font-size: 2.0rem;
-      font-weight: bold;
-      margin-bottom: 15px;
-      color: white;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
   }
 
-/* Contact Text */
+  /* Contact Text */
   .contact-box p {
-      font-size: 1.0rem;
-      font-weight: 400;
-      margin-bottom: 30px;
-      color: rgba(255, 255, 255, 0.8);
+    font-size: 1.0rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.8);
   }
 }
