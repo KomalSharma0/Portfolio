@@ -225,62 +225,6 @@
   }
    window.addEventListener('load', navmenuScrollspy);
    document.addEventListener('scroll', navmenuScrollspy);
-
   
-    // Certifications Section
-   let currentIndex = 0;
-   const totalCertificates = document.querySelectorAll(".certificate").length;
-   const visibleCertificates = 2;
-   const sliderContainer = document.querySelector(".slider-container");
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const slider = document.querySelector(".certification-slider");
-      const prevBtn = document.querySelector(".prev-btn");
-      const nextBtn = document.querySelector(".next-btn");
-      
-      if (!slider || !prevBtn || !nextBtn) return;
-      
-      const itemWidth = slider.children[0].offsetWidth + 20; // Include margin
-      const visibleItems = 2;
-      const scrollAmount = itemWidth * visibleItems;
-      let autoSlideInterval;
-      
-      function startAutoSlide() {
-          stopAutoSlide(); // Prevent multiple intervals
-          autoSlideInterval = setInterval(() => {
-              if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
-                  slider.scrollTo({ left: 0, behavior: "smooth" });
-              } else {
-                  slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
-              }
-          }, 1000); // Auto-slide every 1 seconds
-      }
-      
-      function stopAutoSlide() {
-          clearInterval(autoSlideInterval);
-      }
-      
-      prevBtn.addEventListener("click", function () {
-          stopAutoSlide();
-          slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-          setTimeout(startAutoSlide, 5000); // Resume after 5 sec
-      });
-      
-      nextBtn.addEventListener("click", function () {
-          stopAutoSlide();
-          slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
-          setTimeout(startAutoSlide, 5000);
-      });
-      
-      slider.addEventListener("scroll", function () {
-          stopAutoSlide();
-          setTimeout(startAutoSlide, 5000);
-      });
-      
-      window.addEventListener("resize", startAutoSlide);
-      
-      startAutoSlide(); // Start auto-slide on load
-  }); 
-
 })();
 
