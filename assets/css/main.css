@@ -685,20 +685,19 @@ section,
 /* General Section Styling */
 .about .section-title {
   text-align: Left;
-  font-size: 1.8rem;
 }
 
 /* Summary Section */
-.about p {
-  font-size: 1.5rem;
+.about .summary {
+  font-size: 18px;
   line-height: 1.6;
 }
 
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-  .about p {
-      font-size: 0.5rem;
+  .about .summary {
+      font-size: 14px;
   }
 }
 
