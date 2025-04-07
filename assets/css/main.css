@@ -1002,7 +1002,7 @@ section,
   }
 
   .portfolio .section-title {
-    text-align: center;
+    text-align: left;
     font-size: 22px; /* Adjust title size */
     margin-bottom: 30px;
   }
