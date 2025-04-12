@@ -978,21 +978,31 @@ section,
 .portfolio-info h4 {
   font-size: 18px;
   margin-bottom: 5px;
+  color: #fff; /* Ensures white title */
+  background-color: rgba(255, 255, 255, 0.15); /* Soft contrast box */
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 5px;
 }
 
 .portfolio-info p {
   font-size: 14px;
+  color: #f1f1f1; /* Slightly brighter than white */
 }
 
-.portfolio-links {
-  margin-top: 10px;
-}
-
+/* Ensure all links inside portfolio-info are clearly visible */
 .portfolio-links a {
   display: inline-block;
-  color: #fff;
-  margin: 0
+  color: #00aced; /* Bright blue for visibility */
+  margin: 0 5px;
+  text-decoration: none;
+  font-weight: 600;
 }
+
+.portfolio-links a:hover {
+  text-decoration: underline;
+}
+
 
 
 /* Responsive Styling */
