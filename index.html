@@ -80,7 +80,6 @@
       <!-- Circular profile picture with play button -->
       <div class="video-frame" onclick="openVideo()">
         <img src="assets/img/circlebg.png" alt="Komal Sharma">
-        <div class="play-button">&#9658;</div>
       </div>
 
       <!-- Name and Tagline -->
@@ -89,27 +88,6 @@
         <p><span class="typed" data-typed-items="Data Enthusiast | Transforming Data into Insights"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
   </section>
-
-  <!-- Video Popup -->
-  <div id="video-popup" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="closeVideo()">&times;</span>
-      <iframe id="youtube-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-  </div>
-
-  <!-- JavaScript -->
-  <script>
-    function openVideo() {
-      document.getElementById("video-popup").style.display = "flex";
-      document.getElementById("youtube-video").src = "https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1";
-    }
-
-    function closeVideo() {
-      document.getElementById("video-popup").style.display = "none";
-      document.getElementById("youtube-video").src = "";
-    }
-  </script>
   
 
   <!-- About Section -->
