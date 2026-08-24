@@ -88,6 +88,27 @@
         <p><span class="typed" data-typed-items="Data Enthusiast | Transforming Data into Insights"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
   </section>
+
+  <!-- Video Popup 
+  <div id="video-popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closeVideo()">&times;</span>
+      <iframe id="youtube-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  JavaScript 
+  <script>
+    function openVideo() {
+      document.getElementById("video-popup").style.display = "flex";
+      document.getElementById("youtube-video").src = "https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1";
+    }
+
+    function closeVideo() {
+      document.getElementById("video-popup").style.display = "none";
+      document.getElementById("youtube-video").src = "";
+    }
+  </script> Video Popup -->
   
 
   <!-- About Section -->
@@ -96,7 +117,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>About</h2>
-      <p class="summary">I’m passionate about uncovering insights from data and turning them into real impact. Through internships and hands-on projects, I’ve built a strong foundation in SQL, Python, Power BI, and Excel—constantly refining my skills and exploring new ways to make data more meaningful. I thrive on learning, problem-solving, and finding stories within numbers.</p>
+      <p class="summary">I’m interested in data analysis and enjoy working with data to understand patterns, organize information, and create useful reports. I have hands-on experience with Excel, MIS reporting, and sales data through my work as a Data Analyst & Sales Coordinator Trainee, along with practical projects using SQL and Power BI. I’m currently building my skills further in SQL, Power BI, Excel, and Python and looking for opportunities where I can learn, contribute, and grow as a Data Analyst.</p>
     </div><!-- End Section Title -->
 
   </section><!-- /About Section -->
@@ -111,12 +132,12 @@
         <div class="skill-card">Power BI</div>
         <div class="skill-card">SQL</div>
         <div class="skill-card">Python (Basics)</div>
-        <div class="skill-card">Dashboarding</div>
+        <div class="skill-card">Data Analysis</div>
+        <div class="skill-card">MIS Reporting</div>
+        <div class="skill-card">Data Cleaning & Transformation</div>
+        <div class="skill-card">Dashboard Development</div>
         <div class="skill-card">Data Visualization</div>
-        <div class="skill-card">Problem-Solving</div>
-        <div class="skill-card">Attention to Detail</div>
-        <div class="skill-card">Presentation Skills</div>
-        <div class="skill-card">Communication</div>
+        <div class="skill-card">Pivot Tables & Excel Reporting</div>
     </div>
   </section><!-- /Skills Section -->    
   
@@ -129,12 +150,29 @@
       </div>
     
       <div class="timeline-container">
-          <div class="timeline-item">
+         <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                  <h5>MBA - Business Analytics</h5>
+                  <p class="timeline-date"><strong>Amity University (Online) | Jul 2026 - Present</strong></p>
+              </div>
+          </div>
+        
+         <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                  <h5>Data Analyst & Sales Coordinator Trainee</h5>
+                  <p class="timeline-date"><strong>Feb 2026 - Aug 2026</strong></p>
+                  <p class="timeline-description">Gained practical experience in data management, MIS reporting, and sales operations. Managed sales and business data, prepared reports and trackers, maintained records, and supported the sales team using Excel-based reporting and analysis.</p>
+              </div>
+          </div> 
+         
+         <div class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-card">
                   <h5>Independent Data Analytics Projects</h5>
-                  <p class="timeline-date"><strong>Feb 2025 - Present</strong></p>
-                  <p class="timeline-description">I am currently working on advanced, end-to-end data analytics projects to apply and expand my technical skills. These projects involve data cleaning, analysis, and visualization using SQL, Power BI, Excel, and Python. I also create presentation videos to effectively communicate insights and showcase my ability to deliver complete, real-world analytics solutions.</p>
+                  <p class="timeline-date"><strong>Feb 2025 - Jan 2026</strong></p>
+                  <p class="timeline-description">I worked independently on advanced, end-to-end data analytics projects to apply and expand my technical skills. These projects involve data cleaning, analysis, and visualization using SQL, Power BI, Excel, and Python. I also create presentation videos to effectively communicate insights and showcase my ability to deliver complete, real-world analytics solutions.</p>
               </div>
           </div>
 
@@ -196,12 +234,11 @@
               <div class="timeline-dot"></div>
               <div class="timeline-card">
                   <h5>Bachelor of Science (P.M.Cs)</h5>
-                  <p class="timeline-date"><strong>2017 - 2020</strong></p>
-                  <p class="timeline-description">Earned a Bachelor of Science in Physics, Mathematics, and Computer Science, where I built a strong analytical foundation. The curriculum was theory-heavy, with limited hands-on exposure, but it introduced me to Python and SQL. At that time, I wasn’t familiar with data analytics, but this exposure later helped me transition into the field.</p>
+                  <p class="timeline-date"><strong>Kumaun University | Jul 2017 - Jul 2020</strong></p>
               </div>
           </div>
       </div>
-  </section><!-- /Experience Section -->       
+  </section><!-- /Experience Section -->    
 
     
 
@@ -255,7 +292,7 @@
           </div>
           
 
-          <!-- Sql Project 1 -->
+          <!-- Sql Project 1-->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sql">
             <div class="portfolio-content h-100">
               <img src="portfolio/book.png" class="img-fluid" alt="">
@@ -271,10 +308,10 @@
           </div>
           
 
-          <!-- SQL Project 2
+          <!-- SQL Project 2-->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sql">
             <div class="portfolio-content h-100">
-              <img src="portfolio/project1.png" class="img-fluid" alt="">
+              <img src="portfolio/f&p.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Investment Analysis Dashboard</h4>
                 <p>Power BI dashboard analyzing investment preferences.</p>
@@ -283,10 +320,9 @@
                 <a href="executive_summary.pdf" target="_blank" class="details-link"><i class="bi bi-file-earmark-text"></i> Summary</a>
               </div>
             </div>
-          </div>
 
 
-          <!-- PowerBI Project 1 -->
+          </div><!-- PowerBI Project 1 -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-powerbi">
             <div class="portfolio-content h-100">
               <img src="portfolio/cab.png" class="img-fluid" alt="">
@@ -302,10 +338,10 @@
           </div>
           
 
-          <!-- PowerBI Project 2 
+          <!-- PowerBI Project 2 -->
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-powerbi">
             <div class="portfolio-content h-100">
-              <img src="portfolio/project1.png" class="img-fluid" alt="">
+              <img src="portfolio/f&p.png" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Investment Analysis Dashboard</h4>
                 <p>Power BI dashboard analyzing investment preferences.</p>
@@ -315,7 +351,7 @@
               </div>
             </div>
           </div>
-          
+
           <!-- Add more projects following this structure -->
         </div>
       </div>
